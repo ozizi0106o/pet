@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>clinic_check</title>
+  <!-- css -->
+<link rel="icon" type="image/x-icon" href="img/common/favicon.ico"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- js -->
+<!-- <script src="js/test.js" async></script> -->
+<script src="js/m_header.js"></script>
+</head>
+
+<body class="check">
+
+  <div class="c_wrapper">
+    <header>
+
+  <!-------------- m_header ----------------->
+  <div class="m_header m_toggle">
+    <h5><a href="../member_index.html"><img src="./img/member/catlogo-8.png" alt=""><span>會員專區</span><img src="./img/member/catlogo-8.png" alt="" style="opacity: 0;"></a></h5>
+    
+    <div><a href="../member_people.html"><img src="./img/member/Profile-Male-PNG.jpg" alt="profile"  class="m_person_pic"><span>吳愛寵 </span><span>&emsp; 您好</span></a></div>
+    <div class="m_pets">
+      <a href="../member_pets.html"><img src="./img/member/Group 2151.png" alt="profile"  class="m_pet_pic"></a>
+      <a href="../member_pets.html"><img src="./img/member/Group 2151.png" alt="profile"  class="m_pet_pic"></a>
+      <a href="../member_pets.html"><img src="./img/member/Group 2151.png" alt="profile"  class="m_pet_pic"></a>
+    </div>
+    
+    <div class="m_underline_1"></div>
+    <ul>
+        <li><a href="../member_people.html"><img src="./img/member/catlogo-8.png" alt=""><span>我的帳號</span><img src="./img/member/catlogo-8.png" alt="" style="opacity: 0;"></a></li>
+        <li><a href="../member_pets.html"><img src="./img/member/catlogo-8.png" alt=""><span>我的寵物</span><img src="./img/member/catlogo-8.png" alt="" style="opacity: 0;"></a></li>
+        <li><a href="../member_order_management.html"><img src="./img/member/catlogo-8.png" alt=""><span>訂單管理</span><img src="./img/member/catlogo-8.png" alt="" style="opacity: 0;"></a></li>
+        
+    </ul>
+    <input type="button" value="登&emsp;&emsp;出">
+  </div>
+  <!-------------- m_header ----------------->
+
+  <a href="index.html" class="i_logo"><img src="img/common/i_logo.png" alt="" /></a>
+  <ul class="i_navigation">
+    <li>
+      <a href="restaurant.html">
+        <img src="img/common/i_navigationHover.png" alt="" />
+        <h5>毛起來吃</h5>
+      </a>
+    </li>
+    <li>
+      <a href="hotel.html">
+        <img src="img/common/i_navigationHover.png" alt="" />
+        <h5>毛起來睡</h5>
+      </a>
+    </li>
+    <li>
+      <a href="Mall.html">
+        <img src="img/common/i_navigationHover.png" alt="" />
+        <h5>毛起來買</h5>
+      </a>
+    </li>
+    <li>
+      <a href="clinic_index.html">
+        <img src="img/common/i_navigationHover.png" alt="" />
+        <h5>什麼毛病</h5>
+      </a>
+    </li>
+  </ul>
+  <ul class="i_accountShopping">
+    <li>
+      <a href="#">
+        <span class="material-icons" id="m_header_control">person</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="material-icons">shopping_cart</span>
+      </a>
+    </li>
+  </ul>
+
+  <nav>
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <a href="index.html"><img src="img/common/i_logo.png"></a>
+          <ul>
+            <li><a href="restaurant.html">
+                <h5>毛起來吃</h5>
+              </a></li>
+            <li><a href="hotel.html">
+                <h5>毛起來睡</h5>
+              </a></li>
+            <li><a href="Mall.html">
+                <h5>毛起來買</h5>
+              </a></li>
+            <li><a href="clinic_index.html">
+                <h5>什麼毛病</h5>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- 毛孩健檢 -->
+    <div class="i_banner">
+      <div class="i_banner_left"><img src="img/clinic/headerTree2.png" alt=""></div>
+      <div class="i_banner_center">
+        <img class="i_clinic_center_left" src="img/clinic/header_C_left.png" alt="">
+        <h1><span>毛孩</span>健檢</h1>
+        <img class="i_clinic_center_right" src="img/clinic/header_C_right.png" alt="">
+      </div>
+      <div class="i_banner_right"><img src="img/clinic/headerTree1.png" alt=""></div>
+    </div>
+
+    <div class="check_main">
+      <div class="c_left_box">
+
+        <!-- 下拉選單 -->
+        <select>
+          <option>請選擇您的寵物</option>
+          <option>狗</option>
+          <option>貓</option>
+        </select>
+
+        <div class="c_check">
+       
+          <!-- 套餐 -->
+          <div class="c_set">
+            <div class="c_set_title">
+              <img src="./img/clinic/checkdog@2x.png" class="mask_dog">
+              <h3>快速篩檢<br>特價3000元</h3>
+            </div>
+            <div class="c_set_content">
+              <ul>
+                <li class="alpha">01</li>
+                <li class="item">基礎理學檢查</li>
+              </ul>
+              <ul>
+                <li class="alpha">02</li>
+                <li class="item">重大傳染病篩檢</li>
+              </ul>
+              <ul>
+                <li class="alpha">03</li>
+                <li class="item">腎臟病早期篩檢</li>
+              </ul>
+              <ul>
+                <li class="alpha">04</li>
+                <li class="item">血液常規</li>
+              </ul>
+              <ul>
+                <li class="alpha">05</li>
+                <li class="item">血糖檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">06</li>
+                <li class="item">血清蛋白質檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">07</li>
+                <li class="item">腎指數檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">08</li>
+                <li class="item">肝指數檢測</li>
+              </ul>
+            </div>
+            <div>
+              <button>加入</button>
+              <input type="hidden" value="快速篩檢|check1@2x.png|3000">
+            </div>
+          </div>
+
+          <div class="c_set">
+            <div class="c_set_title">
+              <img src="./img/clinic/checkdog@2x.png" class="mask_dog">
+              <h3>進階健檢&nbsp;<span>(包含01~08項)</span><br>特價4500元</h3>
+            </div>
+            <div class="c_set_content">
+              <ul>
+                <li class="alpha">09</li>
+                <li class="item">進階肝膽指數檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">10</li>
+                <li class="item">鈣磷檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">11</li>
+                <li class="item">血脂功能檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">12</li>
+                <li class="item">電解質檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">13</li>
+                <li class="item">胰臟指數檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">14</li>
+                <li class="item">影像學檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">15</li>
+                <li class="item">甲狀腺功能檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">16</li>
+                <li class="item">犬CRP檢測</li>
+              </ul>
+            </div>
+            <div>
+              <button>加入</button>
+              <input type="hidden" value="進階健檢|check2@2x.png|4500">
+            </div>
+          </div>
+
+          <div class="c_set">
+            <div class="c_set_title">
+              <img src="./img/clinic/checkdog@2x.png" class="mask_dog">
+              <h3>熟齡健檢&nbsp;<span>(包含01~16項)</span><br>特價7500元</h3>
+            </div>
+            
+            <div class="c_set_content">
+              <ul>
+                <li class="alpha">17</li>
+                <li class="item">果糖胺檢測</li>
+              </ul>
+              <ul>
+                <li class="alpha">18</li>
+                <li class="item">進階眼科檢查</li>
+              </ul>
+              <ul>
+                <li class="alpha">19</li>
+                <li class="item">糞便檢查</li>
+              </ul>
+              <ul>
+                <li class="alpha">20</li>
+                <li class="item">尿液檢查</li>
+              </ul>
+              <ul>
+                <li class="alpha">21</li>
+                <li class="item">快速心電圖檢查</li>
+              </ul>
+              <ul>
+                <li class="alpha">22</li>
+                <li class="item">腹腔超音波</li>
+              </ul>
+              <ul>
+                <li class="alpha">23</li>
+                <li class="item">心臟超音波</li>
+              </ul>
+              <ul>
+                <li class="alpha">24</li>
+                <li class="item">胸腔X光</li>
+              </ul>
+            </div>
+            <div>
+              <input type="hidden" value="熟齡健檢|check3@2x.png|7500">
+              <button>加入</button>
+            </div>
+          </div>
+          <!-- 加價購 -->
+          <div class="c_plus">
+            <div class="c_plus_title">
+              <img src="./img/clinic/checkplus@2x.png">
+              <h3>加價購</h3>
+            </div>
+            <p>下列項目任選2項可享9折加價購</p>
+            <div class="c_plus_content">
+              <ul>
+                <li class="alpha">A</li>
+                <li class="item">血球12項檢測</li>
+                <li class="cost">2000元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">B</li>
+                <li class="item">消化試驗</li>
+                <li class="cost">500元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">C</li>
+                <li class="item">四合一快篩</li>
+                <li class="cost">1000元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">D</li>
+                <li class="item">血壓測量</li>
+                <li class="cost">200元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">E</li>
+                <li class="item">血型測定</li>
+                <li class="cost">2500元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">F</li>
+                <li class="item">進階血液檢驗</li>
+                <li class="cost">3600元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">G</li>
+                <li class="item">基礎血液檢驗</li>
+                <li class="cost">1200元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+              <ul>
+                <li class="alpha">H</li>
+                <li class="item">尿中微量蛋白</li>
+                <li class="cost">800元</li>
+                <li> <img src="./img/clinic/plus@2x.png" class="plus_button"></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="c_right_box">
+        <div class= "clinic_order">
+          <h1>健檢項目</h1>
+          <div class="set"></div>
+        
+          <h3>加價購</h3>
+          <div class="c_plus_1"></div>
+          <div class="c_plus_2"></div>
+         
+          <h3 class="c_price">總價NT5130元</h3>
+          <button>預約健檢</button>
+        </div>
+
+        <div>
+          <a href="clinic_index.html">回健檢首頁</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="cursor-follow"></div>
+
+<footer>
+  <div class="i_footerWrapper">
+    <div class="i_footerLeft">
+      <div class="i_footerLeftColumn">
+        <h3>快速連結</h3>
+        <ul>
+          <li>
+            <a href="index.html#news">最新消息</a>
+          </li>
+          <li>
+            <a href="index.html#location">地理位置</a>
+          </li>
+          <li>
+            <a href="clinic_faq.html">毛孩FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="i_footerLeftColumn">
+        <h3>品牌服務</h3>
+        <ul>
+          <li>
+            <a href="restaurant.html">毛起來吃</a>
+          </li>
+          <li>
+            <a href="hotel.html">毛起來睡</a>
+          </li>
+          <li>
+            <a href="mall.html">毛起來買</a>
+          </li>
+          <li>
+            <a href="clinic_index.html">什麼毛病</a>
+          </li>
+        </ul>
+      </div>
+      <div class="i_footerLeftColumn">
+        <h3>其他項目</h3>
+        <ul>
+          <li>
+            <a target="mywindow1" href="https://www.104.com.tw/company/1a2x6bjqy4?jobsource=jolist_a_relevance">徵才資訊</a>
+          </li>
+          <li>
+            <a target="mywindow2" href="https://www.tibame.com/">商業合作</a>
+          </li>
+          <li>
+            <a target="mywindow3" href="https://asms.coa.gov.tw/Amlapp/app/Default.aspx">公益活動</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="i_divider"></div>
+    <ul class="i_footerRight">
+      <li>
+        <span>Tel:</span>
+        <a href="tel:02-12349876">02-1234-9876</a>
+      </li>
+      <li>
+        <span>E-mail:</span>
+        <a href="mailto:LovePets@gmail.com">LovePets@gmail.com</a>
+      </li>
+      <li>
+        <span>Address:</span>
+        <span>104 台北市中山區南京東路三段219號</span>
+      </li>
+      <li>
+        <span>Open:</span>
+        <span>週一至週日 09: 00 – 21: 30</span>
+      </li>
+    </ul>
+  </div>
+  <p class="i_copyright">
+    本網站為緯育TibaMe前端設計工程師班第66期第2組學員專題成果作品，本平台僅供學習，展示之用。參考資源:
+    XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+  </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/cursor.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </script>
+</body>
+
+</html>
