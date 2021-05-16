@@ -15,6 +15,8 @@
 <!-- <script src="js/test.js" async></script> -->
 <script src="js/m_header.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
     <title>hotel</title>
 </head>
 
@@ -196,7 +198,7 @@
 
     <!-- 房型選擇跟介紹-->
     <div class="h_room">
-        <div class="h_type">            
+        <!-- <div class="h_type">            
                 <select>
                     <option value="0" disabled selected>請選擇房型</option>
                     <option value="1">時毛玩意</option>
@@ -205,13 +207,14 @@
                     <option value="4">青喵淡寫</option>
                     <option value="5">舒毛一夏</option>
                 </select>            
-        </div>
+        </div> -->
            
         <div class="h_dropdown">
             <input id="h_toggle" type="checkbox">
             <label for="h_toggle" class="h_navbar"><span class="h_title">請選擇房型</span><i class="far fa-chevron-down h_point"></i></label>
             <ul class="h_dropdown_menu">
                 <li class="h_headline">請選擇房型</li>
+                <!-- 當我點擊navbar第二次才出現 -->
                 <li class="h_content">時毛玩意</li>
                 <li class="h_content">一汪無際</li>
                 <li class="h_content">天羅地汪</li>
@@ -326,9 +329,38 @@
                 </ul>
             </div>
         </div>
-    </div>    
+    </div>
 
-    <!-- 720度環景-->
+     <!-- 720度環景-->
+     <section class="h_surrounding_view">        
+        <div id="h_panorama">
+            <div id="h_controlbtn">
+                <div class="h_ctrl" id="h_arrow_up">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+
+                <div class="h_ctrl" id="h_arrow_down">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <div class="h_ctrl" id="h_arrow_left">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
+
+                <div class="h_ctrl" id="h_arrow_right">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+
+                <div class="h_ctrl" id="h_enlarge">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+
+                <div class="h_ctrl" id="h_narrow">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <div class="cursor-follow"></div>
@@ -411,6 +443,8 @@
 <script src="js/cursor.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script src="./js/hotel.js"></script>
 </body>
 </html>
